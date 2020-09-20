@@ -65,8 +65,21 @@ Coordinate operator+(Coordinate c1, Coordinate c2)
     return temp;
 }
 
+//输出运算符重载
 ostream& operator<<(ostream &output, Coordinate &coor)
 {
     output << coor.m_iX << "," << coor.m_iY;
     return output;
+}
+
+//索引运算符重载
+int Coordinate::operator [](int index)
+{
+    if (0 == index){
+        return m_iX;
+    } else if (1 == index){
+        return m_iY;
+    } else {
+        return m_iY;
+    }
 }

@@ -14,10 +14,15 @@ public:
 
     //前++
     Coordinate &operator++();
+
     //后++
     Coordinate operator++(int);
+
     //+运算符重载, 注意上面有友元重载，所以这里注释
     // Coordinate operator+(Coordinate &c);
+
+    //索引运算符重载
+    int operator [](int index);
 
     int getX();
     int getY();

@@ -27,8 +27,13 @@ int main(int argc, const char** argv) {
     // cout << coor3.getX() << "," << coor3.getY() << endl;
 
     //输出运算符重载
-    Coordinate coor1(1,3);
-    cout << coor1 << endl;
+    // Coordinate coor1(1,3);
+    // cout << coor1 << endl;
+
+    //索引运算符重载
+    Coordinate coor6(6,9);
+    cout << "m_iX: " << coor6[0] << endl;
+    cout << "m_iY: "<< coor6[1] << endl;
 
     return 0;
 }
